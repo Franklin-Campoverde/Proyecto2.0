@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+
+        <title>Tecno</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/prettyPhoto.css" rel="stylesheet"/>
+        <link href="css/price-range.css" rel="stylesheet"/>
+        <link href="css/animate.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <link href="css/responsive.css" rel="stylesheet"/>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    </head>
+
+    <body>
+        <header id="header"><!--header-->
+            <div class="header_top"><!--header_top-->
+                <div class="container">
+                    <div class="row">
+
+
+                    </div>
+                </div>
+            </div><!--/header_top-->
+
+            <div class="header-middle"><!--header-middle-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 clearfix">
+                            <div class="logo pull-left">
+
+                                <a href="shop.xhtml"><img src="images/home/logo.png" alt="" /></a>
+                            </div>
+                            <div class="btn-group pull-right clearfix">
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 clearfix">
+                            <div class="shop-menu clearfix pull-right">
+                                <ul class="nav navbar-nav">
+                                    <h:link outcome="/Login.xhtml" value="Login" class="fa fa-lock"/>
+                                    <h:link outcome="/Administrador.xhtml" value="Adminsitrador" class="fa fa-lock"/>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header-middle-->
+
+            <div class="header-bottom"><!--header-bottom-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="mainmenu pull-left">
+                                <ul class="nav navbar-nav collapse navbar-collapse">
+                                    <h:link outcome="/shop.xhtml" value="Principal" class="active"/>
+                                    
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="search_box pull-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="advertisement">
+            <div class="container">
+                <img src="images/home/B365M-A gr.png" alt=""/>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="left-sidebar">
+                            <h2>Categorias</h2>
+                            <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                Discos Duros
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="sportswear" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">SSD </a></li>
+                                                <li><a href="#">HDD PORTATILES </a></li>
+                                                <li><a href="#">HDD PC </a></li>
+                                                <li><a href="#">SSD M.2</a></li>
+                                                <li><a href="#">EXTRA </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                Memorias Ram
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="mens" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Memorias ram portatiles</a></li>
+                                                <li><a href="#">memorias ram pc escritorio</a></li>
+                                                <li><a href="#">memorias ram servidores</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#womens">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                accesorios
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="womens" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">mouses</a></li>
+                                                <li><a href="#">teclados</a></li>
+                                                <li><a href="#">auriculares</a></li>
+                                                <li><a href="#">bocinas</a></li>
+                                                <li><a href="#">alfombrillas</a></li>
+                                                <li><a href="#">MEMORIAS USB</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">mainboards</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">routers</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">Cases</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">monitores</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">fuentes de poder</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">cables de red</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">portatiles</a></h4>
+                                    </div>
+                                </div>
+                            </div><!--/category-products-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9 padding-right">
+                        <div class="features_items"><!--features_items-->
+                            <h2 class="title text-center">Categorias </h2>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/B550-AORUSPRO gr.jpg" alt=""/>
+
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/GA-H110M-H gr.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content"> 
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/H310M-M gr.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper"><strong></strong>
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+
+
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                        <img src="images/home/new.png" class="new" alt="" />
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/RAM16GB.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                        <img src="images/home/sale.png" class="new" alt="" />
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/SSD ADATA960GB.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/ramservidor.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/tarjetavideogigabyte1030.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/SSD ADATA960GB.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/corsair-16gb-ddr4-sodimm-ram-laptop-2400mhz-D_NQ_NP_936289-MEC31355130518_072019-F.jpg" alt=""/>
+                                            <h2>$56</h2>
+                                            <p>ram</p>
+                                            <a href="ProductoDetalle.xhtml" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="ProductoDetalle.xhtml" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/discoduroint2tb.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/parlantehp.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div> <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="images/home/parlantehp.jpg" alt=""/>
+                                            <h2>$56</h2>
+
+                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                        </div>
+                                        <div class="product-overlay">
+                                            <div class="overlay-content">
+                                                <h2>$56</h2>
+
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Inf producto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <ul class="pagination">
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">;</a></li>
+                            </ul>
+                        </div><!--features_items-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer"><!--Footer-->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <div class="single-widget">
+                                <h2>Acerca de nosotros</h2>
+                                <form action="#" class="searchform">
+                                    <input type="text" placeholder="Ingresa tu correo" />
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                    <p>Para mantenerte al tanto de la tecnologÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­a <br />Tu sitio favorito actualizado para ti</p>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <p class="pull-left">Grupo 1 Universidad de Guayaquil </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer><!--/Footer-->
+    </body>
+
+</html>

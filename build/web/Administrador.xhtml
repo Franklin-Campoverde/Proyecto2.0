@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+          
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/prettyPhoto.css" rel="stylesheet"/>
+        <link href="css/price-range.css" rel="stylesheet"/>
+        <link href="css/animate.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <link href="css/responsive.css" rel="stylesheet"/>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-ngprecomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    </h:head>
+    <h:body>
+        <header id="header"><!--header-->
+
+
+            <div class="header-middle"><!--header-middle-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 clearfix">
+                            <div class="logo pull-left">
+                                <a href="shop.xhtml"><img src="images/home/logo.png" alt="" /></a>
+                            </div>
+                            <div class="btn-group pull-right clearfix">
+
+                            </div>
+                        </div>
+                        <div class="col-md-8 clearfix">
+                            <div class="shop-menu clearfix pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="shop.xhtml" class="active">Principal</a></li>
+                                    <li><a href="Login.xhtml"><i class="fa fa-user"></i> Cuenta</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header-middle-->
+            
+        </header><!--/header-->
+
+        <section id="form"><!--form-->
+            <div class="container">
+                <div class="row">
+                    <h:form>
+                        <p:commandButton value="Agregar Producto" actionListener="#{productoBean.limpiarProducto()}" oncomplete="PF('dialogoAgregar').show();" update=":fromAgregar"/>
+                        <p:separator/>
+                    </h:form>
+                    
+                        
+                            
+                    <h2>Codigo producto</h2>
+                    <p:inputText placeholder="codigo" value="#{productoBean.producto.idProduct}"/>
+                    <p:commandButton  class="btn btn-default"  actionListener="#{productoBean.buscarProducto(productoBean)}" 
+                                      value="Buscar" oncomplete="PF('dialogoActualizar').show();" update=":fromActualizar">
+                        <f:setPropertyActionListener target="#{productoBean.producto}" value="#{productoBean.producto.idProduct}"/>
+                    </p:commandButton>
+                    <p:separator/>    
+                            
+                       
+                </div>
+                <h:form id="fromPrincipal">
+                                <p:dataTable id="tabla" paginator="true" paginatorPosition="bottom" rows="10" var="producto" value="#{productoBean.list}"  emptyMessage="No existen Productos">
+                                    <p:column headerText="Codigo producto">
+                                        <h:outputText value="#{producto.idProduct}" />
+                                    </p:column>
+                                    <p:column headerText="Nombre Producto">
+                                        <h:outputText value="#{producto.nomber}" />
+                                    </p:column>
+                                    <p:column headerText="Codigo de Barras">
+                                        <h:outputText value="#{producto.codigoUnico}" />
+                                    </p:column>
+                                    <p:column headerText="Precio">
+                                        <h:outputText value="#{producto.precio}" />
+                                    </p:column>
+                                    <p:column headerText="Cantidad">
+                                        <h:outputText value="#{producto.cantidad}" />
+                                    </p:column>
+                                    <p:column headerText="MODIFICAR" style="text-align: center">
+                                        <p:commandButton  class="btn btn-default"  actionListener="#{productoBean.actualizarProducto()}" 
+                                                          title="Update" icon="ui-icon-pencil" oncomplete="PF('dialogoActualizar').show();" update=":fromActualizar">
+                                            <f:setPropertyActionListener target="#{productoBean.producto}" value="#{producto}"/>
+                                        </p:commandButton>
+                                    </p:column>
+                                    <p:column headerText="ELIMINAR" style="text-align: center">
+                                        <p:commandButton action="#{productoBean.eliminarProducto()}" icon="ui-icon-trash" title="Eliminar" oncomplete="PF('dialogoEliminar').show();" update=":formEliminar">
+                                            <f:setPropertyActionListener target="#{productoBean.producto}" value="#{producto}"/>
+                                        </p:commandButton>
+                                    </p:column>
+                                </p:dataTable>
+                            </h:form>
+            </div>
+        </section><!--/form-->
+        
+        <h:form id="fromAgregar">
+            <p:dialog id="dlgAgregar" header="Agregar Producto" widgetVar="dialogoAgregar" resizable="false" showEffect="fade" hideEffect="explode" modal="true">
+                <p:panelGrid columns="2" style="margin: 0 auto;">                                
+                    <p:outputLabel value="codigo:"/>
+                    <p:inputText value="#{productoBean.producto.idProduct}"/>
+                    <p:outputLabel value="nombre producto:"/>
+                    <p:inputText placeholder="nombre" value="#{productoBean.producto.nomber}"/>
+                    <p:outputLabel value="Codigo de Barras:"/>
+                    <p:inputText placeholder="codigo de barras" value="#{productoBean.producto.codigoUnico}" />
+                    <p:outputLabel value="Precio del Producto:"/>
+                    <p:inputText placeholder="precio del producto" value="#{productoBean.producto.precio}" />
+                    <p:outputLabel value="Cantidad del Producto:"/>
+                    <p:inputText placeholder="cantidad del producto" value="#{productoBean.producto.cantidad}" />
+                    <p:outputLabel value="Descripcion del Producto:"/>
+                    <p:inputText placeholder="descripcion" style="width: 628px; height: 198px" value="#{productoBean.producto.descripcion}"/>
+                    <p:outputLabel value="Modelo:"/>
+                    <p:inputText placeholder="modelo" value="#{productoBean.producto.modelo}"/>
+                    <p:outputLabel value="Url Imagen:"/>
+                    <p:inputText placeholder="url" value="#{productoBean.producto.url}"/>
+                                
+                </p:panelGrid>
+                <p:commandButton  value="Guardar" actionListener="#{productoBean.agregarProducto()}" update=":fromPrincipal:tabla" oncomplete="PF('dialogoAgregar').hide();"/>
+                <p:commandButton  value="Cancelar" onclick="PF('dialogoAgregar').hide();"/>
+            </p:dialog>
+        </h:form>
+        
+        <h:form id="fromActualizar">
+            <p:dialog id="dlgActualizar" header="Modificar Producto" widgetVar="dialogoActualizar" resizable="false" showEffect="fade" hideEffect="explode" modal="true">
+                <p:panelGrid columns="2" style="margin: 0 auto;">                                
+                    <p:outputLabel value="codigo:"/>
+                    <p:inputText value="#{productoBean.producto.idProduct}"/>
+                    <p:outputLabel value="nombre producto:"/>
+                    <p:inputText placeholder="nombre" value="#{productoBean.producto.nomber}"/>
+                    <p:outputLabel value="Codigo de Barras:"/>
+                    <p:inputText placeholder="codigo de barras" value="#{productoBean.producto.codigoUnico}" />
+                    <p:outputLabel value="Precio del Producto:"/>
+                    <p:inputText placeholder="precio del producto" value="#{productoBean.producto.precio}" />
+                    <p:outputLabel value="Cantidad del Producto:"/>
+                    <p:inputText placeholder="cantidad del producto" value="#{productoBean.producto.cantidad}" />
+                    <p:outputLabel value="Descripcion del Producto:"/>
+                    <p:inputText placeholder="descripcion" style="width: 628px; height: 198px" value="#{productoBean.producto.descripcion}"/>
+                    <p:outputLabel value="Modelo:"/>
+                    <p:inputText placeholder="modelo" value="#{productoBean.producto.modelo}"/>
+                    <p:outputLabel value="Url Imagen:"/>
+                    <p:inputText placeholder="url" value="#{productoBean.producto.url}"/>
+                                
+                </p:panelGrid>
+                <p:commandButton  value="Guardar" actionListener="#{productoBean.actualizarProducto()}" update=":fromPrincipal:tabla" oncomplete="PF('dialogoActualizar').hide();"/>
+                <p:commandButton  value="Cancelar" onclick="PF('dialogoActualizar').hide();"/>
+            </p:dialog>
+        </h:form>
+        
+        <h:form id="formEliminar">
+            <p:dialog id="dlgEliminar" header="Eliminar Producto" widgetVar="dialogoEliminar" resizable="false" showEffect="fade" hideEffect="explode" modal="true">
+                <h:outputText value="Desea eliminar este registro?"/>
+                <p:commandButton  value="Si" actionListener="#{productoBean.eliminarProducto()}" update=":fromPrincipal:tabla" oncomplete="PF('dialogoEliminar').hide();"/>
+                <p:commandButton  value="No" onclick="PF('dialogoEliminar').hide();"/>
+            </p:dialog>
+        </h:form>
+        <footer id="footer"><!--Footer-->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="companyinfo">
+                                <h2><span>e</span>-Tecnoshop</h2>
+                                <p>Lo mejor de la tecnología en el país al menor precio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <div class="single-widget">
+                                <h2>Acerca de nosotros</h2>
+                                <form action="#" class="searchform">
+                                    <input type="text" placeholder="Ingresa tu correo" />
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                    <p>Para mantenerte al tanto de la tecnología <br />Tu sitio favorito actualizado para ti</p>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <p class="pull-left">Grupo 1 || Universidad de Guayaquil </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer><!--/Footer-->
+
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/price-range.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/main.js"></script>
+    </h:body>
+</html>

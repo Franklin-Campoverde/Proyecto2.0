@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Detalle Productos - TecnoShop</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/prettyPhoto.css" rel="stylesheet"/>
+        <link href="css/price-range.css" rel="stylesheet"/>
+        <link href="css/animate.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <link href="css/responsive.css" rel="stylesheet"/>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+            <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    </h:head><!--/head-->
+
+    <h:body>
+        <header id="header"><!--header-->
+            <div class="header_top"><!--header_top-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="contactinfo">
+                                <ul class="nav nav-pills">
+                                    <li><a href=""><i class="fa fa-phone"></i> 0996612608</a></li>
+                                    <li><a href=""><i class="fa fa-envelope"></i> infotecnoshop@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="social-icons pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header_top-->
+
+            <div class="header-middle"><!--header-middle-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 clearfix">
+                            <div class="logo pull-left">
+                                <a href="shop.xhtml"><img src="images/home/logo.png" alt="" /></a>
+                            </div>
+                            <div class="btn-group pull-right clearfix">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                                        
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 clearfix">
+                            <div class="shop-menu clearfix pull-right">
+                                <ul class="nav navbar-nav">
+                                    
+                                    <li><a href="Login.xhtml"><i class="fa fa-user"></i> Cuenta</a></li>
+                                    
+                                 
+                                    <li><a href="Login.xhtml"><i class="fa fa-lock"></i> Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header-middle-->
+
+            <div class="header-bottom"><!--header-bottom-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="mainmenu pull-left">
+                                <ul class="nav navbar-nav collapse navbar-collapse">
+                                    <li><a href="shop.xhtml" class="active">Principal</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--/header-bottom-->
+        </header><!--/header-->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="left-sidebar">
+                            <h2>Categorías</h2>
+                            <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                Discos Duros
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="sportswear" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">SSD </a></li>
+                                                <li><a href="#">HDD PORTATILES </a></li>
+                                                <li><a href="#">HDD PC´s </a></li>
+                                                <li><a href="#">SSD M.2</a></li>
+                                                <li><a href="#">EXTRAÍBLES </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                Memorias Ram
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="mens" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Memorias ram portatiles</a></li>
+                                                <li><a href="#">memorias ram pc´s escritorio</a></li>
+                                                <li><a href="#">memorias ram servidores</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordian" href="#womens">
+                                                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                                accesorios
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="womens" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">mouses</a></li>
+                                                <li><a href="#">teclados</a></li>
+                                                <li><a href="#">auriculares</a></li>
+                                                <li><a href="#">bocinas</a></li>
+                                                <li><a href="#">alfombrillas</a></li>
+                                                <li><a href="#">MEMORIAS USB</a></li>
+                                                <li><a href="#">cámaras</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">mainboards</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">routers</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">Cases</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">monitores</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">fuentes de poder</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">cables de red</a></h4>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a href="#">portátiles</a></h4>
+                                    </div>
+                                </div>
+                            </div><!--/category-products-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9 padding-right">
+                        <div class="product-details"><!--product-details-->
+                            <div class="col-sm-5">
+                                <div class="view-product">
+                                    <img src="images/home/corsair-16gb-ddr4-sodimm-ram-laptop-2400mhz-D_NQ_NP_936289-MEC31355130518_072019-F.jpg" alt="" />
+                                    <h3>ZOOM</h3>
+                                </div>
+                                <div id="similar-product" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Wrapper for slides -->
+
+
+                                    <!-- Controls -->
+                                    <a class="left item-control" href="#similar-product" data-slide="prev">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a class="right item-control" href="#similar-product" data-slide="next">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="product-information"><!--/product-information-->
+                                    <h2>Corsair 16gb Ddr4 Sodimm Ram Laptop 2400mhz</h2>
+                                    <p>Web ID: 1089774</p>
+                                    <span>
+                                        <span>US $148.54</span>
+                                        <label>Cantidad:</label>
+                                        <input type="text" value="3" />
+                                        <button type="button" class="btn btn-fefault cart">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            Add to cart
+                                        </button>
+                                    </span>
+                                    <p><b>Condicion:</b> Nuevo</p>
+                                    <p><b>Marca:</b> Corsair</p>
+                                </div><!--/product-information-->
+                            </div>
+                        </div><!--/product-details-->
+
+
+
+                        <div class="tab-pane fade active in" id="reviews" >
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-user"></i>marca</a></li>
+                                </ul>
+                                <p>Descripcion</p>
+
+                                <h:form>
+                                    <span>
+                                        <p>Marca:</p>
+                                        <p>Modelo:</p>
+                                    </span>
+                                </h:form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--/category-tab-->
+
+                <div class="recommended_items"><!--recommended_items-->
+                    <h2 class="title text-center">items recomendados</h2>
+
+                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">	
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend1.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend2.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">	
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend1.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend2.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>			
+                    </div>
+                </div><!--/recommended_items-->
+            </div>
+            <div>
+            </div>
+        </section>
+
+        <footer id="footer"><!--Footer-->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="companyinfo">
+                                <h2><span>e</span>-Tecnoshop</h2>
+                                <p>Lo mejor de la tecnología en el país al menor precio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <div class="single-widget">
+                                <h2>Acerca de nosotros</h2>
+                                <form action="#" class="searchform">
+                                    <input type="text" placeholder="Ingresa tu correo" />
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                    <p>Para mantenerte al tanto de la tecnología <br />Tu sitio favorito actualizado para ti</p>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+                        <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer><!--/Footer-->
+
+
+    </h:body>
+</html>

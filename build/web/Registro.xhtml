@@ -1,0 +1,33 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registro</title>
+        <link href="css/registro.css" rel="stylesheet" type="text/css"/>
+
+    </h:head>
+
+
+    <h:body>
+        <section class="form-register">
+            <h:form>
+                <h4> Registro</h4>
+                <p:inputText class="controls" id="nombre" value="#{registroBean.persona.nombre}" required="true" placeholder="Ingrese su Nombre"/>
+                <p:inputText class="controls" id="apellido" value="#{registroBean.persona.apellido}" required="true" placeholder="Ingreses su Apellidos"/>
+                <p:inputText class="controls" id="usuario" value="#{registroBean.persona.nombreUsuario}" required="true" placeholder="Ingrese su Nombre de Usuario"/>
+                <p:inputText class="controls" id="email" value="#{registroBean.persona.correo}" required="true" placeholder="Ingrese su Correo"/>
+                <p:inputText class="controls" id="tipoUsuario" value="#{registroBean.persona.tipoUsuario}" required="true" placeholder="Ingrese el Tipo de Usuario"/>
+                <h:outputText value="Contraseña:"/>
+                <h:inputSecret class="controls" id="contrasenia" value="#{registroBean.persona.contrasena}" required="true"/>
+                <h:link outcome="" value="Estoy de acuerdo con Terminos y Condiciones" class="fa fa-lock"/>
+                <h:commandButton actionListener="#{registroBean.crearPersona()}" value="Registrar" class="botons"/> 
+                <h:link outcome="/Login.xhtml" value="¿Ya tengo Cuenta?" class="fa fa-lock"/>
+                <br>
+                <h:link outcome="shop.xhtml" value="Regresar al Inicio" class="fa fa-lock"/>
+            </h:form>
+        </section>
+        
+    </h:body>
+</html>
